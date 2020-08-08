@@ -1,0 +1,35 @@
+  #idFotograma {
+    animation: bounce .9s alternate infinite ease-in;
+  }  
+  
+  @media screen and (min-width:701px) {
+      @keyframes bounce {
+          0% {
+              transform: translateX(25%);
+          }
+          100% {
+              transform: translateX(-25%);
+          }
+      }
+    
+    #idFotograma {
+      color: red;
+      display: inline-block; /*needed to trigger update */
+    }
+  }
+  
+  @media screen and (max-width:700px) {
+      @keyframes bounce {
+          0% {
+              transform: translateY(-200%);
+          }
+          100% {
+              transform: translateY(0);
+          }
+      }
+    
+    #idFotograma {
+      color: green;
+      display: block; /* needed to trigger update */
+    }
+  }
